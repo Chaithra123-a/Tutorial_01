@@ -5,15 +5,16 @@ from dist import *
 
 # Define a function witha root where the horizontal distanc equals R.
 def F(theta):
-    return
+    return dist(theta, c, g, v0) - R
 
-v0=
-c=
-g=
-R = 
-eps_x =    # The maximal error is stated in the assignment!
-eps_f = 
+v0= 100
+c= 0.01
+g= 9.81
+R = 85
+eps_x =  0.01  # The maximal error/ upper bound of the error is stated in the assignment!
+eps_f =  0.1   # this no. is too large, the standard is 10 ^ -6 # is also called residual. 
 kMax = 
+
 # First task: solution(s) for R=85.0 (m).
 theta, ... = bisect( ... )
 if conv:
